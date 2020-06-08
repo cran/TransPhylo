@@ -1,3 +1,6 @@
+## ----echo=F--------------------------------------------------------------
+knitr::opts_chunk$set(fig.width=6, fig.height=4) 
+
 ## ------------------------------------------------------------------------
 library(TransPhylo)
 set.seed(0)
@@ -31,7 +34,7 @@ plot(ptree)
 library(ape)
 p<-phyloFromPTree(ptree)
 plot(p)
-axisPhylo()
+axisPhylo(backward = F)
 
 ## ----eval=F--------------------------------------------------------------
 #  write.tree(p,'tree.nwk')

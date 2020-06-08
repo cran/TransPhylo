@@ -13,6 +13,7 @@ plotTTree = function(ttree,w.shape,w.scale,showLabels=TRUE,maxTime=NA,cex=1) {
   nam=ttree$nam
   ttree=ttree$ttree
   n=nrow(ttree)
+  
   #Determine ys 
   ys <- rep(0, n)
   scale <- rep(1,n)
@@ -25,7 +26,7 @@ plotTTree = function(ttree,w.shape,w.scale,showLabels=TRUE,maxTime=NA,cex=1) {
     todo=todo[-1]
   }
   ys=rank(ys)
-  oldpar <- par(no.readonly = TRUE)
+  oldpar <- par('yaxt','bty')
   on.exit(par(oldpar))
   par(yaxt='n',bty='n')
   mi=min(ttree[,1])

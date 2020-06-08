@@ -1,6 +1,6 @@
 Package: TransPhylo
-Version: 1.4.2
-Date: 2020-05-11
+Version: 1.4.4
+Date: 2020-06-01
 Title: Inference of Transmission Tree from a Dated Phylogeny
 Authors@R: c(person("Xavier","Didelot",
                   email="xavier.didelot@gmail.com",
@@ -25,8 +25,8 @@ RoxygenNote: 6.1.1
 SystemRequirements: C++11
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2020-05-11 14:46:12 UTC; Xavier
+Packaged: 2020-06-04 10:49:19 UTC; Xavier
 Author: Xavier Didelot [aut, cre] (<https://orcid.org/0000-0003-1885-500X>),
   Yuanwei Xu [ctb]
 Repository: CRAN
-Date/Publication: 2020-05-13 16:00:07 UTC
+Date/Publication: 2020-06-08 21:40:14 UTC

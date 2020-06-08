@@ -2,13 +2,15 @@
 title: "Inference of transmission tree from a dated phylogeny"
 author: "Xavier Didelot"
 date: '`r Sys.Date()`'
-output: html_document
+output: html_vignette
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Inference of transmission tree from a dated phylogeny}
   %\usepackage[utf8]{inputenc}
 ---
-
+```{r echo=F}
+knitr::opts_chunk$set(fig.width=6, fig.height=4) 
+```
 
 If you want to reproduce exactly the same results as the ones shown in this tutorial, you need to set the seed of your random number generator to zero:
 ```{r}
@@ -22,9 +24,9 @@ This tutorial illustrates the main functionality of TransPhylo, which is to infe
 
 ```{r}
 library(ape)
-phy<-read.tree(text='(((2:0.007344035611,6:0.656820028):0.7562780805,3:1.643413444):1.293120815,((5:1.519248672,1:1.231048819):0.303038892,4:1.257652937):0.784065883);')
+phy<-read.tree(text='((4:1.257652937,(1:1.231048819,5:1.519248672):0.303038892):0.784065883,(3:1.643413444,(6:0.656820028,2:0.007344035611):0.7562780805):1.293120815);')
 plot(phy)
-axisPhylo()
+axisPhylo(backward = F)
 ```
 
 Because such a phylogeny is dated relatively and not absolutely, we also need to indicate when the last sample was taken, which in the simulation above was equal to 2007.964:

@@ -1,5 +1,5 @@
-## ----setup, include=FALSE------------------------------------------------
-knitr::opts_chunk$set(echo = TRUE)
+## ----echo=F--------------------------------------------------------------
+knitr::opts_chunk$set(fig.width=6, fig.height=4) 
 
 ## ---- library, message=FALSE---------------------------------------------
 library(ape)
